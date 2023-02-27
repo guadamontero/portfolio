@@ -74,7 +74,7 @@ function NavBar() {
               {t('Projects')}
             </Nav.Link>
           </Nav.Item>
-          {/* <Nav.Item>
+          <Nav.Item>
             <Nav.Link
               as={Link}
               to="/certificates"
@@ -85,7 +85,7 @@ function NavBar() {
               />{" "}
               {t('Certificates')}
             </Nav.Link>
-          </Nav.Item> */}
+          </Nav.Item>
         </Nav>
       </Navbar.Collapse>
 
