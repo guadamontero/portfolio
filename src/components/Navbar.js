@@ -11,6 +11,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { TbCertificate } from "react-icons/tb";
 
 import { MdLanguage } from 'react-icons/md';
 
@@ -31,74 +32,86 @@ function NavBar() {
       expand="md"
       className="sticky"
     >
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
-        >
-          <span/>
-          <span/>
-          <span/>
-        </Navbar.Toggle>
-      
-        
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "3px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
+      <Navbar.Toggle
+        aria-controls="responsive-navbar-nav"
+        onClick={() => {
+          updateExpanded(expand ? false : "expanded");
+        }}
+      >
+        <span />
+        <span />
+        <span />
+      </Navbar.Toggle>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "3px" }} /> {t('About')}
-              </Nav.Link>
-            </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "3px" }}
-                />{" "}
-                {t('Projects')}
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mx-auto" defaultActiveKey="#home">
+          <Nav.Item>
+            <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <AiOutlineHome style={{ marginBottom: "3px" }} /> Home
+            </Nav.Link>
+          </Nav.Item>
 
-        { !expand &&  
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              to="/about"
+              onClick={() => updateExpanded(false)}
+            >
+              <AiOutlineUser style={{ marginBottom: "3px" }} /> {t('About')}
+            </Nav.Link>
+          </Nav.Item>
+
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              to="/project"
+              onClick={() => updateExpanded(false)}
+            >
+              <AiOutlineFundProjectionScreen
+                style={{ marginBottom: "3px" }}
+              />{" "}
+              {t('Projects')}
+            </Nav.Link>
+          </Nav.Item>
+          {/* <Nav.Item>
+            <Nav.Link
+              as={Link}
+              to="/certificates"
+              onClick={() => updateExpanded(false)}
+            >
+              <TbCertificate
+                style={{ marginBottom: "3px" }}
+              />{" "}
+              {t('Certificates')}
+            </Nav.Link>
+          </Nav.Item> */}
+        </Nav>
+      </Navbar.Collapse>
+
+      {!expand &&
         <Row>
           <Col className="col-sm-4">
-          <BtnToggleTheme/> 
-          </Col>
-          
-          <Col className="col-sm-4">
-          <Dropdown 
-            onSelect={e => changeLanguage(e)}
-          >
-            <Dropdown.Toggle id="dropdown-basic">
-              <MdLanguage style={{ fontSize: "26px"}}/> {lang.toUpperCase()}
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item eventKey="en">EN</Dropdown.Item>
-              <Dropdown.Item eventKey="es">ES</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown> 
+            <BtnToggleTheme />
           </Col>
 
-        </Row>       
-        }  
-        
+          <Col className="col-sm-4">
+            <Dropdown
+              onSelect={e => changeLanguage(e)}
+            >
+              <Dropdown.Toggle id="dropdown-basic">
+                <MdLanguage style={{ fontSize: "26px" }} /> {lang.toUpperCase()}
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item eventKey="en">EN</Dropdown.Item>
+                <Dropdown.Item eventKey="es">ES</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </Col>
+
+        </Row>
+      }
+
     </Navbar>
   );
 }
