@@ -15,10 +15,14 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.link} target="_blank">
-          <BiLinkExternal /> &nbsp; {t('View')}
-        </Button>
-        
+        <div style={{ display: 'flex', justifyContent:'center', gap:'2rem' }}>
+          <Button variant="primary" href={props.link} target="_blank">
+            <BiLinkExternal /> &nbsp; {t('View')}
+          </Button>
+          <Button variant="secondary" href={props.demo} target="_blank">
+            <BiLinkExternal /> &nbsp; Demo
+          </Button>
+        </div>
       </Card.Body>
     </Card>
   );

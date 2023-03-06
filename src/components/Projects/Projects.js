@@ -31,6 +31,7 @@ function Projects() {
               title="Dogs App"
               description={t('Proj2')}
               link="https://github.com/francocoll/Dogs"
+              demo='https://dogs-franco.vercel.app/'
             />
           </Col>
 
@@ -41,9 +42,9 @@ function Projects() {
               title="Gusto E-Commerce"
               description={t('Proj3')}
               link="https://github.com/francocoll/Gusto-PF"
+              demo='https://gusto-franco.vercel.app/'
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={quiosco}
@@ -51,6 +52,7 @@ function Projects() {
               title={t('Kiosk')}
               description={t('Proj4')}
               link="https://github.com/francocoll/Quiosco-Next"
+              demo='https://quiosco-franco.vercel.app/'
             />
           </Col>
           <Col md={4} className="project-card">
@@ -60,6 +62,7 @@ function Projects() {
               title='Criptos App'
               description={t('Proj5')}
               link="https://github.com/francocoll/criptos-react-vite"
+              demo='https://cripto-franco.netlify.app/'
             />
           </Col>
           <Col md={4} className="project-card">
@@ -69,6 +72,7 @@ function Projects() {
               title={t('Dates')}
               description={t('Proj6')}
               link="https://github.com/francocoll/citas_react_vite"
+              demo='https://citas-franco.netlify.app/'
             />
           </Col>
           <Col md={4} className="project-card">
@@ -77,6 +81,7 @@ function Projects() {
               title={t('Weather')}
               description={t('Proj1')}
               link="https://github.com/francocoll/weather-app"
+              demo='https://weather-app-franco.netlify.app/'
             />
           </Col>
         </Row>
