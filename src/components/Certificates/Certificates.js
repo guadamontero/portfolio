@@ -14,6 +14,7 @@ function Certificates() {
         <Container fluid className='project-section'>
             <Particle />
             <Container>
+                
                 <h1 className="project-heading">
                     <strong className="green">{t('Certificates')} </strong>
                 </h1>
