@@ -1,9 +1,9 @@
 html {
   --green-light: #92e3a9;
-  --green-0: #0e4429;
-  --green-1: #006d32;
-  --green-2: #26a641;
-  --green-3: #39d353;
+  --green-0: #94ADD7;
+  --green-1: #6528F7;
+  --green-2: #6528F7;
+  --green-3: #A076F9;
   --imp-text-color: var(--green-3); 
   height: 100%; 
 }
@@ -232,40 +232,24 @@ button:focus {
 /* --------- */
 /* Home section */
 /* --------- */
-.wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+.emoji {
+  animation-name: star-animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transform-origin: center;
   display: inline-block;
+  font-size: 27px; /* Emoji size */
 }
 
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
+@keyframes star-animation {
+  0%, 100% {
+    transform: scale(1);
   }
   50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
+    transform: scale(1.2);
   }
 }
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;

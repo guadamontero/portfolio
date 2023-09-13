@@ -1,9 +1,9 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../assets/home.svg";
-import Particle from "../Particle";
-import Type from "./Type";
-import { useTranslation } from "react-i18next";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import homeLogo from '../../assets/home.png';
+import Particle from '../Particle';
+import Type from './Type';
+import { useTranslation } from 'react-i18next';
 
 function Home() {
   const { t } = useTranslation();
@@ -16,21 +16,31 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                {t('Greeting')} <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
+                {t('Greeting')}{' '}
+                <span class="emoji" role="img" aria-labelledby="wink">
+                  ✨
+                </span>
               </h1>
 
               <h1 className="heading-name">
                 {t('Im')}
-                <strong className="main-name"> Franco Coll</strong>
+                <strong className="main-name">
+                  {' '}
+                  Guadalupe Montero
+                </strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: 50, textAlign: 'left' }}>
                 <Type />
               </div>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img src={homeLogo} alt="home pic" className="img-fluid" />
+              <img
+                src={homeLogo}
+                alt="home pic"
+                className="img-fluid"
+              />
             </Col>
           </Row>
         </Container>
