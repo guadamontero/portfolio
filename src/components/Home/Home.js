@@ -17,8 +17,12 @@ function Home() {
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 {t('Greeting')}{' '}
-                <span class="emoji" role="img" aria-labelledby="wink">
-                  ✨
+                <span
+                  class="emoji"
+                  role="img"
+                  aria-labelledby="rocket"
+                >
+                  🚀
                 </span>
               </h1>
 

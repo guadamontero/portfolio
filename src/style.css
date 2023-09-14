@@ -233,23 +233,27 @@ button:focus {
 /* Home section */
 /* --------- */
 .emoji {
-  animation-name: star-animation;
-  animation-duration: 1.5s;
+  animation-name: rocket-animation;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: center;
   display: inline-block;
-  font-size: 27px; /* Emoji size */
+  font-size: 27px;
 }
 
-@keyframes star-animation {
-  0%, 100% {
-    transform: scale(1);
+@keyframes rocket-animation {
+  0% {
+    transform: translateY(0);
   }
+
   50% {
-    transform: scale(1.2);
+    transform: translateY(-10px) rotate(5deg);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
-
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -272,7 +276,7 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 7rem 0 2rem !important;
   color: var(--text-color);
   text-align: left;
 }

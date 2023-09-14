@@ -23,9 +23,10 @@ function Footer() {
             <li className="social-icons">
               <a
                 className="footer-social-icons"
-                href="https://github.com/francocoll"
+                href="https://github.com/guadamontero"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ fontSize: '27px' }}
               >
                 <AiFillGithub />
               </a>
@@ -33,9 +34,10 @@ function Footer() {
             <li className="social-icons">
               <a
                 className="footer-social-icons"
-                href="https://www.linkedin.com/in/franco-coll/"
+                href="https://www.linkedin.com/in/guadalupe-montero/"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ fontSize: '27px' }}
               >
                 <FaLinkedinIn />
               </a>
@@ -43,9 +45,10 @@ function Footer() {
             <li className="social-icons">
               <a
                 className="footer-social-icons"
-                href="mailto:francoadrian.coll2012@gmail.com"
+                href="mailto:guadamontero10@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ fontSize: '27px' }}
               >
                 <AiFillMail />
               </a>
@@ -53,9 +56,10 @@ function Footer() {
             <li className="social-icons">
               <a
                 className="footer-social-icons"
-                href="https://wa.me/+543513287397"
+                href="https://wa.me/+543515186464"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ fontSize: '27px' }}
               >
                 <BsWhatsapp />
               </a>

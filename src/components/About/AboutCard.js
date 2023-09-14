@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import { FaHandPointRight } from 'react-icons/fa';
+import { FaCheck } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
 
@@ -23,22 +23,7 @@ function AboutCard() {
             {t('School2')}.
             <br />
             <br />
-            {t('Interests')}
           </p>
-          <ul>
-            <li className="about-activity">
-              <FaHandPointRight /> Full Stack Developer
-            </li>
-            <li className="about-activity">
-              <FaHandPointRight /> Front-End Developer
-            </li>
-            <li className="about-activity">
-              <FaHandPointRight /> Systems Engineering
-            </li>
-            <li className="about-activity">
-              <FaHandPointRight /> Software Developer
-            </li>
-          </ul>
         </blockquote>
         <div
           style={{
@@ -46,6 +31,7 @@ function AboutCard() {
             marginTop: '1rem',
             padding: '1rem',
             gap: '2rem',
+            justifyContent: 'center',
           }}
         >
           <Button size="lg">
